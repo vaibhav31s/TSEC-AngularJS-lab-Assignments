@@ -9,14 +9,19 @@
 
 
 <!-- Toolbar -->
-<div class="toolbar p-10" role="banner" >
-  <!-- <app-navbar/> -->
+
+<div class="toolbar p-10" role="banner">
+  <app-navbar />
   <h1 class="text-3xl font-bold underline text-center justify-center p-10">
-      Input Form 
+    Input Form
   </h1>
-  <app-input-form/>
+  <app-input-form (newItemEvent)="setData($event)" />
 
-
+  <h1 class="text-3xl font-bold underline text-center justify-center p-10">
+    Output Form
+  </h1>
+  <!-- {{data | json}} -->
+  <app-output-form [data]="data" />
 </div>
 
 

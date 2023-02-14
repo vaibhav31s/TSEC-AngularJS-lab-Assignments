@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { InputFormComponent } from './input-form/input-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { OutputFormComponent } from './output-form/output-form.component';
-
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +15,7 @@ import { OutputFormComponent } from './output-form/output-form.component';
     OutputFormComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],

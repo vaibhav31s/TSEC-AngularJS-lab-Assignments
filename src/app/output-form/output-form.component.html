@@ -1,10 +1,9 @@
-<div>
-    <p>
-        Your Full Name :  {{first_name}}
-      </p>
-
-
-      <p> Second name: {{second_name}}</p>
-      <p> College name: </p>
-
+<div class=" text-start text-center  space-y-5">
+    <p class="p-2 m-2 border border-gray-200 border-r-2 hover:border-r-[200px] rounded-md shadow-sm space-x-2 "> <span class="font-semibold"> College name : </span> {{data.college}}</p>
+    <p class="p-2 m-2 border border-gray-200 border-r-2 hover:border-r-[200px] rounded-md shadow-sm space-x-2"> <span class="font-semibold"></span>  <span class="font-semibold"> Full name : </span>  {{data.first + " " + data.second}}</p>
+    <p class="p-2 m-2 border border-gray-200 border-r-2 hover:border-r-[200px] rounded-md shadow-sm space-x-2"> <span class="font-semibold"> Email Address : </span>  {{data.email}}</p>
+    <p class="p-2 m-2 border border-gray-200 border-r-2 hover:border-r-[200px] rounded-md shadow-sm space-x-2"> <span class="font-semibold"> Mobile Number : </span>   {{data.mobile}}</p>
+    <p class="p-2 m-2 border border-gray-200 border-r-2 hover:border-r-[200px] rounded-md shadow-sm space-x-2"> <span class="font-semibold"> CGPA Overall : </span>   {{data.cgpa}}</p>
+    <p class="p-2 m-2 border border-gray-200 border-r-2 hover:border-r-[200px] rounded-md shadow-sm space-x-2"> <span class="font-semibold"> Gender : </span>   {{data.isMale ? 'Male' : 'Male'}}</p>
+    <p class="p-2 m-2 border border-gray-200 border-r-2 hover:border-r-[200px] rounded-md shadow-sm space-x-2"> <span class="font-semibold"> Github Link :</span>  <a href="https://github.com/{{data.github}}"  target="_blank">{{data.github}}</a></p>
 </div>
